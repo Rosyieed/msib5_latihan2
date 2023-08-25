@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Tugas 2 - Rosyid Eko Nugroho</title>
+</head>
+
+<body>
+  <div class="container" style="color: white;">
+    <div class="wrap-judul" style="background-color: #7d9ade; padding: 1px; margin-bottom: 10px; border-radius: 5px;">
+      <h2 style="text-align: center;">Hitung Nilai Rata-rata</h2>
+    </div>
+    <form style="margin-bottom: 5vh; padding: 10px; border-radius: 5px">
+      <label for="nama">Nama Mahasiswa:</label>
+      <input type="text" id="nama" placeholder="Nama Mahasiswa" required />
+
+      <label for="matkul">Mata Kuliah:</label>
+      <input type="text" id="matkul" placeholder="Mata Kuliah" required />
+
+      <label for="grade">Pilihan Grade:</label>
+      <select id="grade" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+      </select>
+      <button type="button" id="hitungButton">Hitung</button>
+    </form>
+
+    <hr>
+
+    <div class="wrap-judul-hasil"
+      style="background-color: #7d9ade; border-radius: 5px; padding: 1px; margin-top: 10px;">
+      <h2 style="text-align: center;">Hasil Perhitungan</h2>
+    </div>
+    <div class="wrap-hasil-akhir" style="background-color: #7d9ade; border-radius: 5px;">
+      <table border="5">
+        <thead>
+          <tr style="background-color: #4771d2;">
+            <th>Nama Mahasiswa</th>
+            <th>Mata Kuliah</th>
+            <th>Grade</th>
+            <th>Nilai Rata-rata</th>
+          </tr>
+        </thead>
+        <tbody id="hasil"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
