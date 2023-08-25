@@ -1,9 +1,15 @@
-const result = document.getElementById("hasil");
 
 document.getElementById("hitungButton").addEventListener("click", function () {
+
+  const result = document.getElementById("hasil");
   const nama = document.getElementById("nama").value;
   const matkul = document.getElementById("matkul").value;
   const grade = document.getElementById("grade").value;
+
+  if (nama == "" || matkul == "" || grade == "") {
+    alert("Isi semua form!");
+    return;
+  }
 
   let nilaiSkala = 0;
   switch (grade) {
